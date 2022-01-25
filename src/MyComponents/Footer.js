@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function footer() {
+export const Footer = () => {
   return <div>footer work</div>;
-}
+};

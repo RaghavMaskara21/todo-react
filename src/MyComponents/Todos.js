@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default function todos() {
-  return <div>todos work</div>;
-}
+export const Todos = () => {
+  return <div className='container'>
+    <h3>Todos List</h3>
+  </div>;
+};
 
 
