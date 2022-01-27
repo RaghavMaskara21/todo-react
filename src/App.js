@@ -6,6 +6,9 @@ import  {Footer}  from './MyComponents/Footer';
 
 
 function App() {
+  const onDelete = (todo)=>{
+    console.log("Deleted todo",todo);
+  }
   let todos= [
     {
       sno:1 ,
@@ -26,7 +29,7 @@ function App() {
   return (
     <>
     <Header title="MyTodoList" searchbar={false}/>
-    <Todos todos={todos}/>
+    <Todos todos={todos} onDelete={onDelete}/>
     <Footer/>
        </>
   );
